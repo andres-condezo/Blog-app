@@ -36,8 +36,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_09_231456) do
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.text "text"
-    t.integer "comments_counter"
-    t.integer "likes_counter"
+    t.integer "comments_counter", default: 0
+    t.integer "likes_counter", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "author_id", null: false
@@ -48,14 +48,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_09_231456) do
     t.string "name"
     t.string "photo"
     t.text "bio"
-    t.integer "posts_counter"
+    t.integer "posts_counter", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   add_foreign_key "comments", "posts"
-  add_foreign_key "comments", "users", column: "author_id", on_delete: :cascade
+  add_foreign_key "comments", "users", column: "author_id"
   add_foreign_key "likes", "posts"
-  add_foreign_key "likes", "users", column: "author_id", on_delete: :cascade
-  add_foreign_key "posts", "users", column: "author_id", on_delete: :cascade
+  add_foreign_key "likes", "users", column: "author_id"
+  add_foreign_key "posts", "users", column: "author_id"
 end
