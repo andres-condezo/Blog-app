@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddPostRefToComments	db/migrate/20220709230515_add_post_ref_to_comments.rb	/^class AddPostRefToComments < ActiveRecord::Migration[7.0]$/;"	c
+AddPostRefToLikes	db/migrate/20220709230337_add_post_ref_to_likes.rb	/^class AddPostRefToLikes < ActiveRecord::Migration[7.0]$/;"	c
+AddUserRefToComments	db/migrate/20220709230043_add_user_ref_to_comments.rb	/^class AddUserRefToComments < ActiveRecord::Migration[7.0]$/;"	c
+AddUserRefToLikes	db/migrate/20220709230229_add_user_ref_to_likes.rb	/^class AddUserRefToLikes < ActiveRecord::Migration[7.0]$/;"	c
+AddUserRefToPosts	db/migrate/20220709225834_add_user_ref_to_posts.rb	/^class AddUserRefToPosts < ActiveRecord::Migration[7.0]$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:BlogApp
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	test/channels/application_cable/connection_test.rb	/^class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCase$/;"	c
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+ApplicationSystemTestCase	test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	c
+BlogApp	config/application.rb	/^module BlogApp$/;"	m
+ChangeCommentUserIdToAuthorId	db/migrate/20220709231310_change_comment_user_id_to_author_id.rb	/^class ChangeCommentUserIdToAuthorId < ActiveRecord::Migration[7.0]$/;"	c
+ChangeLikesUserIdToAuthorId	db/migrate/20220709231414_change_likes_user_id_to_author_id.rb	/^class ChangeLikesUserIdToAuthorId < ActiveRecord::Migration[7.0]$/;"	c
+ChangePostsUserIdToAuthorId	db/migrate/20220709231456_change_posts_user_id_to_author_id.rb	/^class ChangePostsUserIdToAuthorId < ActiveRecord::Migration[7.0]$/;"	c
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
+Comment	app/models/comment.rb	/^class Comment < ApplicationRecord$/;"	c
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
+CreateComments	db/migrate/20220709090327_create_comments.rb	/^class CreateComments < ActiveRecord::Migration[7.0]$/;"	c
+CreateLikes	db/migrate/20220709090341_create_likes.rb	/^class CreateLikes < ActiveRecord::Migration[7.0]$/;"	c
+CreatePosts	db/migrate/20220709090258_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration[7.0]$/;"	c
+CreateUsers	db/migrate/20220709090056_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[7.0]$/;"	c
+Like	app/models/like.rb	/^class Like < ApplicationRecord$/;"	c
+Post	app/models/post.rb	/^class Post < ApplicationRecord$/;"	c
+User	app/models/user.rb	/^class User < ApplicationRecord$/;"	c
+change	db/migrate/20220709090056_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	db/migrate/20220709090258_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
+change	db/migrate/20220709090327_create_comments.rb	/^  def change$/;"	f	class:CreateComments
+change	db/migrate/20220709090341_create_likes.rb	/^  def change$/;"	f	class:CreateLikes
+change	db/migrate/20220709225834_add_user_ref_to_posts.rb	/^  def change$/;"	f	class:AddUserRefToPosts
+change	db/migrate/20220709230043_add_user_ref_to_comments.rb	/^  def change$/;"	f	class:AddUserRefToComments
+change	db/migrate/20220709230229_add_user_ref_to_likes.rb	/^  def change$/;"	f	class:AddUserRefToLikes
+change	db/migrate/20220709230337_add_post_ref_to_likes.rb	/^  def change$/;"	f	class:AddPostRefToLikes
+change	db/migrate/20220709230515_add_post_ref_to_comments.rb	/^  def change$/;"	f	class:AddPostRefToComments
+change	db/migrate/20220709231310_change_comment_user_id_to_author_id.rb	/^  def change$/;"	f	class:ChangeCommentUserIdToAuthorId
+change	db/migrate/20220709231414_change_likes_user_id_to_author_id.rb	/^  def change$/;"	f	class:ChangeLikesUserIdToAuthorId
+change	db/migrate/20220709231456_change_posts_user_id_to_author_id.rb	/^  def change$/;"	f	class:ChangePostsUserIdToAuthorId
+recent_comments	app/models/post.rb	/^  def recent_comments(max = 5)$/;"	f	class:Post
+recent_posts	app/models/user.rb	/^  def recent_posts(max = 3)$/;"	f	class:User
+system!	bin/setup	/^def system!(*args)$/;"	f
+update_comments_counter	app/models/comment.rb	/^  def update_comments_counter$/;"	f	class:Comment
+update_likes_counter	app/models/like.rb	/^  def update_likes_counter$/;"	f	class:Like
+update_posts_counter	app/models/post.rb	/^  def update_posts_counter$/;"	f	class:Post
