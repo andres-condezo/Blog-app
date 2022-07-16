@@ -1,0 +1,11 @@
+<div class="p-user-container">
+  <div class="img-container">
+    <img class="post-img-user" src="<%= user.photo %>" alt="user image"/>
+  </div>  
+  <div class="info-container">
+    <%= link_to user_path(user.id) do %>
+      <h2><%= user.name %></h2>
+      <p>Number of posts: <%= user.posts.count %></p>
+    <% end %>
+  </div>  
+</div>

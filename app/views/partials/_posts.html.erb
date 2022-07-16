@@ -1,0 +1,9 @@
+<div class="p-post-container">
+  <%= link_to user_post_path(user_id: @user.id, id: post.id) do %>
+    <h2><%= post.title %></h2>
+    <p><%= post.text.truncate_words(20) %></p>
+  <% end %>
+  <p class="like-par">
+    Comments: <%= post.comments_counter %>  | Likes: <%= post.likes_counter %>
+  </p>
+</div>
