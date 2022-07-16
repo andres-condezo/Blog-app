@@ -1,1 +1,8 @@
-<h1>Here is a post for a given user</h1>
+<%= render partial: 'partials/post', locals: { post: @post } %>
+<% if @post.comments_counter > 0 %>
+  <div class="comment">
+    <% @post.comments.each do |comment| %>
+      <%= render partial: 'partials/comments', locals: { comment: comment} %>
+    <% end %>
+  </div>
+<% end %>
