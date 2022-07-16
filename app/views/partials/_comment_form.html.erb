@@ -1,0 +1,9 @@
+<%= form_with model: Comment.new, url: user_post_comments_path(post_id: post_id, user_id: user_id), class: 'form-comment' do |f| %>
+  <div class="form-comment-container">
+    <%= f.text_area :text, rows: 5, placeholder: 'Leave your comment here ...', class: 'f-text-area' %>
+  </div>
+
+  <div class="form-submit">
+    <%= f.submit 'Add a new comment', class: 'submit-comment' %>
+  </div>
+<% end %>
