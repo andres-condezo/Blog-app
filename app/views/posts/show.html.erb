@@ -1,8 +1,11 @@
-<%= render partial: 'partials/post', locals: { post: @post } %>
-<% if @post.comments_counter > 0 %>
+<%= render partial: 'partials/post', locals: { post: @current_post } %>
+<% if @current_post.comments_counter > 0 %>
   <div class="comment">
-    <% @post.comments.each do |comment| %>
-      <%= render partial: 'partials/comments', locals: { comment: comment} %>
+    <% @current_post.comments.each do |comment| %>
+      <%= render partial: 'partials/comments', locals: { comment: comment } %>
     <% end %>
   </div>
+<% else %>
+  <div></div>
 <% end %>
+<%= render partial: 'partials/comment_form', locals: { post_id: @current_post.id, user_id: @current_user.id } %>

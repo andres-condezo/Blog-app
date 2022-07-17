@@ -1,6 +1,13 @@
 <%= render 'partials/user', user: @user %>
+
+<div class="post-create-btn-container">
+  <button type="button" class="post-create-btn">
+    <%= link_to "Create a new post", new_user_post_path %>
+  </button>
+</div>
+
 <% if @user.recent_posts.length > 0 %>
-  <% @user.recent_posts.each do |post| %>
+  <% @user_posts.each do |post| %>
     <%= render partial: 'partials/posts', locals: { post: post } %>
     <% if post.comments_counter > 0 %>
       <div class="comment">

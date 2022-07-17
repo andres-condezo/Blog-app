@@ -5,5 +5,11 @@
       Comments: <%= post.comments_counter %> |  Likes: <%= post.likes_counter %>
     </span>
   </h2>
+
   <p><%= post.text %></p>
+
+  <%= button_to 'Like',
+    user_post_likes_path(post_id: post.id),
+    class: 'button-like'
+  %>
 </div>
