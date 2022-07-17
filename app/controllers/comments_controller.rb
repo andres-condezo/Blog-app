@@ -6,6 +6,10 @@ class CommentsController < ApplicationController
     redirect_to user_post_path(@comment.author_id, @comment.post_id)
   end
 
+  def new
+    @comment = Comment.new
+  end
+
   private
 
   def post_params
