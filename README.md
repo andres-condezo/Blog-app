@@ -112,6 +112,13 @@ bundle exec rspec ./spec/<folder_name>/<file_name>
 [@andres-condezo]:https://github.com/andres-condezo
 [@andres_condezo]:https://twitter.com/andres_condezo
 [andres-condezo]:https://www.linkedin.com/in/andres-condezo/
+
+👤 **Amina Buhari**
+
+- GitHub: [@githubhandle](https://github.com/AminaBuhari)
+- Twitter: [@twitterhandle](https://twitter.com/AminaBuhari)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amina-buhari/)
+
 <!-- table Variables -->
 
 | 👤           | **Andres Condezo** |
