@@ -1,3 +1,5 @@
+<h2>New Post</h2>
+
 <%= form_with model: @post, url: user_posts_url, class: 'post-form-container' do |f| %>
   <div class="title-field-container">
     <%= f.label :title, class: 'title-label' %>
@@ -9,7 +11,7 @@
     <%= f.text_area :text, rows: 5, placeholder: 'Content...', class: 'content-text-area' %>
   </div>
 
-  <div class="submit-btn-container">
-    <%= f.submit 'Create post', class: 'submit-btn' %>
+  <div class="btn-c">
+    <%= f.submit 'Create', class:'btn' %>
   </div>
 <% end %>

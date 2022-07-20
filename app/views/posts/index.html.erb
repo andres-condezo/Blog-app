@@ -1,22 +1,22 @@
 <%= render 'partials/user', user: @user %>
 
-<div class="post-create-btn-container">
-  <button type="button" class="post-create-btn">
-    <%= link_to "Create a new post", new_user_post_path %>
-  </button>
-</div>
-
-<% if @user.recent_posts.length > 0 %>
+<% if @user_posts.length > 0 %>
   <% @user_posts.each do |post| %>
     <%= render partial: 'partials/posts', locals: { post: post } %>
     <% if post.comments_counter > 0 %>
       <div class="comment">
-        <% post.recent_comments.each do |comment| %>
+        <% post.comments.each do |comment| %>
           <%= render partial: 'partials/comments', locals: { comment: comment } %>
         <% end %>
       </div>
-    <% else %>
-      <div></div>
     <% end %>
   <% end %>
 <% end %>
+
+<div class="pagination-container">
+  <%= link_to "Previous Page", user_posts_path(@user, page: @page - 1), class: 'btn'%>
+  <span><%= @page +1 %></span>
+  <%= link_to "Next Page", user_posts_path(@user, page: @page + 1), class: 'btn' %>
+</div>
+
+<%= render 'partials/btn_post', user: @user %>

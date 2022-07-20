@@ -52,10 +52,10 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 
 main {
-  background-color: whitesmoke;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -99,6 +99,10 @@ p {
   font-size: 2rem;
 }
 
+span {
+  font-weight: bold;
+}
+
 .info-container a p {
   margin-top: 4rem;
   float: right;
@@ -136,3 +140,40 @@ p {
   width: 100%;
   padding: 4rem;
 }
+
+.btn-c {
+  margin: 2rem 0;
+}
+
+.btn {
+  background-color: #000;
+  padding: 1.4rem;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.btn-like {
+ float: right;
+}
+
+.form-comment-container,
+.form-comment,
+.post-form-container {
+  width: 100%;
+}
+
+.f-text-area,
+.title-text-field,
+.content-text-area {
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.title-label,
+.content-label {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
