@@ -1,17 +1,21 @@
 <%= render 'partials/user', user: @user %>
+
 <div class="user-container">
   <h2>Bio</h2>
-  <p>
-    <%= @user.bio %>  
-  </p>
+  <p><%= @user.bio %></p>
 </div>
+
+<h2>Posts</h2>
+
 <% if @user.recent_posts.length > 0 %>
   <% @user.recent_posts.each do |post| %>
     <%= render partial: 'partials/posts', locals: { post: post } %>
   <% end %>
-  <div class="btn-container">
-    <button type="button">
-      <%= link_to "See all posts", user_posts_path(@user) %>
-    </button>
+
+  <div class="btn-c">
+    <%= link_to "See all posts", user_posts_path(@user), class:"btn" %>
   </div>
+
+<% else %>
+  <%= render 'partials/btn_post', user: @user %>
 <% end %>
