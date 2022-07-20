@@ -154,7 +154,7 @@ span {
 }
 
 .btn-like {
- float: right;
+  float: right;
 }
 
 .form-comment-container,
@@ -176,4 +176,3 @@ span {
   font-size: 1.6rem;
   font-weight: bold;
 }
-
