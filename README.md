@@ -106,20 +106,22 @@ bundle exec rspec .
 bundle exec rspec ./spec/<folder_name>/<file_name>
 ```
 
-## Author
+## Authors
 
 <!-- table Variables -->
+[@githubhandle]:https://github.com/AminaBuhari
+[@twitterhandle]:https://twitter.com/AminaBuhari
+[LinkedIn]:https://www.linkedin.com/in/amina-buhari/
 [@andres-condezo]:https://github.com/andres-condezo
 [@andres_condezo]:https://twitter.com/andres_condezo
 [andres-condezo]:https://www.linkedin.com/in/andres-condezo/
-
-👤 **Amina Buhari**
-
-- GitHub: [@githubhandle](https://github.com/AminaBuhari)
-- Twitter: [@twitterhandle](https://twitter.com/AminaBuhari)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/amina-buhari/)
-
 <!-- table Variables -->
+
+| 👤           | **Amina Buhari** |
+|--------------|------------------|
+| **GitHub**   | [@githubhandle]  |
+| **Twitter**  | [@twitterhandle] |
+| **LinkedIn** | [LinkedIn]       |
 
 | 👤           | **Andres Condezo** |
 |--------------|--------------------|
