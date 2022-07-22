@@ -194,3 +194,11 @@ span {
 .check-container {
   display: flex;
 }
+
+.notice {
+  color : green;
+}
+
+.alert {
+  color : red;
+}
