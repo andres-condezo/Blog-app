@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   root to: 'users#index'
 
   scope 'api' do
-    get 'user/:user_id/posts/:id/comments' => 'api/comments#index', as: :api_post_comments
-    post 'user/:user_id/posts/:id/comments' => 'api/comments#create', as: :api_post_comments_create
+    get 'users/:user_id/posts/:id/comments' => 'api/comments#index', as: :api_post_comments
+    post 'users/:user_id/posts/:id/comments' => 'api/comments#create', as: :api_post_comments_create
     resources :users, only: [] do
       get '/posts' => 'api/posts#index', as: :api_user_posts
     end
