@@ -46,7 +46,10 @@ gem 'ffi', '~> 1.15.5'
 
 gem 'devise'
 
+gem 'bcrypt', '~> 3.1.7'
 gem 'cancancan'
+gem 'jwt', '~> 2.2'
+gem 'rack-cors'
 
 # Use Sass to process CSS
 gem 'sassc-rails'
@@ -63,6 +66,7 @@ end
 
 group :development do
   gem 'bullet', require: true
+  gem 'dotenv-rails'
   gem 'letter_opener'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
