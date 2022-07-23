@@ -1,3 +1,4 @@
+<%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-like" %>
 <%= render partial: 'partials/post', locals: { post: @current_post } %>
 <% if @current_post.comments_counter > 0 %>
   <div class="comment">
@@ -6,4 +7,4 @@
     <% end %>
   </div>
 <% end %>
-<%= render partial: 'partials/comment_form', locals: { post_id: @current_post.id, user_id: @current_user.id } %>
+<%= render partial: 'partials/comment_form', locals: { post_id: @current_post.id, user_id: params[:user_id] } %>
