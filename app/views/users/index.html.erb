@@ -1,1 +1,2 @@
+<%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-like" %>
 <%= render partial: 'partials/user', collection: @users, as: :user %>

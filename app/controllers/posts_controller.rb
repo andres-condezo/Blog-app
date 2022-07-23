@@ -1,13 +1,15 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @page = params.fetch(:page, 0).to_i
     @page = 0 if @page.negative? || @page > (Post.count / 2)
-    @user = current_user
+    @user = User.find(params[:user_id])
     @user_posts = Post.includes(comments: [:author]).where(author_id: @user.id).offset(@page * 2).limit(2)
   end
 
   def show
-    @user = current_user
+    @user = User.find(params[:user_id])
     @current_post = Post.includes(comments: [:author]).where(author_id: @user.id).find(params[:id])
     @current_user = current_user
   end
@@ -23,6 +25,13 @@ class PostsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.decrement_posts_counter
+    @post.delete
+    redirect_to user_path(@post.author_id), notice: 'Post deleted'
   end
 
   private

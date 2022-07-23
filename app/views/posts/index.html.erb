@@ -1,3 +1,4 @@
+<%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-like" %>
 <%= render 'partials/user', user: @user %>
 
 <% if @user_posts.length > 0 %>

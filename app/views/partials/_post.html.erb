@@ -12,4 +12,13 @@
     user_post_likes_path(post_id: post.id),
     class: 'btn btn-like'
   %>
+
+  <% if can? :destroy, post %>
+    <%= button_to 'Delete',
+      user_post_path(user_id: post.author.id, id: post.id),
+      method: :delete,
+      data: {confirm: 'Are you sure?'},
+      class: 'btn btn-like'
+    %>
+  <% end %>
 </div>
