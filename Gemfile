@@ -46,6 +46,8 @@ gem 'ffi', '~> 1.15.5'
 
 gem 'devise'
 
+gem 'cancancan'
+
 # Use Sass to process CSS
 gem 'sassc-rails'
 

@@ -76,6 +76,7 @@ GEM
     bullet (7.0.2)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
+    cancancan (3.4.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -235,7 +236,7 @@ GEM
       railties (>= 6.0.0)
     strscan (3.0.3)
     thor (1.2.1)
-    tilt (2.0.10)
+    tilt (2.0.11)
     timeout (0.3.0)
     turbo-rails (1.1.1)
       actionpack (>= 6.0.0)
@@ -269,6 +270,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bullet
+  cancancan
   capybara
   debug
   devise
